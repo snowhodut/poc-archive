@@ -1,8 +1,8 @@
 # PoC Archive
 
-# 보안 취약점 분석 및 PoC(Proof of Concept) 코드 모음.
+보안 취약점 분석 및 PoC(Proof of Concept) 코드 모음.
 
-## :pushpin: 내용 안내
+## :round_pushpin: 내용 안내
 
 - **web/** : 웹 취약점 관련 PoC (SQLi, XSS 등)
 - **pwn/** : 시스템/바이너리 취약점 PoC (BoF, FSB 등)
