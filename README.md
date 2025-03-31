@@ -1,20 +1,49 @@
-# PoC Archive
+# PoC Archive :test_tube:
 
-보안 취약점 분석 및 PoC(Proof of Concept) 코드 모음.
+**보안 취약점 분석 및 PoC (Proof of Concept) 실습 아카이브**  
+웹 기반 보안 취약점을 직접 재현하고, 실습 가능한 코드와 환경을 제공합니다.
 
-## :round_pushpin: 내용 안내
+---
 
-- **web/** : 웹 취약점 관련 PoC (SQLi, XSS 등)
-- **pwn/** : 시스템/바이너리 취약점 PoC (BoF, FSB 등)
-- **ctf-2025/** : CTF 문제 풀이 및 분석 자료
+## :mag: 포함된 웹 취약점 목록
 
-## :hammer: 활용 방법
+- SQL Injection (기본, WAF 우회)
+- XSS (Reflected)
+- SSRF (Server-Side Request Forgery)
+- File Upload
+- IDOR (Insecure Direct Object Reference)
 
-1. 각 폴더별로 분류된 취약점 PoC 확인
-2. 학습 및 연구 목적의 활용 권장
-3. 비윤리적 목적 사용 금지
+---
 
-## :book: 참고 사항
+## :hammer_and_wrench: 활용 방법
 
-- PoC 코드는 학습용으로 작성되었으며, 실제 환경에 적용 시 주의
-- 새로운 PoC 추가 시 적절한 폴더에 정리
+1. 각 폴더별 `app.py` 실행 (또는 `challenge/` 내 Docker 실행)
+2. `poc.py`를 통해 취약점 공격 시나리오 자동 실행
+3. 필요 시 `payloads.txt`로 여러 입력 실험
+4. `challenge/`는 실습 심화용 CTF-style 문제 환경
+
+---
+
+## :book: 활용 목적
+
+- 취약점 개념의 직접 실습 및 재현
+- CTF 준비 및 문제 해결력 강화
+
+> :warning: 본 저장소의 코드는 **학습 및 연구 목적**으로 작성되었습니다.  
+> 실제 시스템이나 타인의 서비스에 대한 **무단 테스트 또는 비윤리적 사용을 금지**합니다.
+
+---
+
+## :sparkles: 프로젝트 철학
+
+> 단순한 코드 조각이 아닌  
+> **“실행 가능한 실습 환경” + “도전 가능한 문제 환경”**을 함께 제공하는  
+> **재현성 중심 PoC 학습 자료 아카이브**를 지향합니다.
+
+---
+
+## :memo: 기여 가이드 (선택 시)
+
+- 새로 추가된 PoC는 관련 취약점 디렉토리에 정리해 주세요.
+- 템플릿은 `templates/` 폴더를 참고해 주세요.
+- 문서화는 `README.md + poc.py + app.py` 구조 권장
