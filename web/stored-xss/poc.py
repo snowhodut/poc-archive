@@ -4,7 +4,8 @@ import requests
 url = "http://localhost:3000"
 
 # XSS 공격이 가능한 페이로드
-payload = "<script>alert('XSS PoC');</script>"
+#payload = "<script>alert('XSS PoC');</script>"
+payload = "thisisplaintext"
 
 def inject_comment(payload):
     """
