@@ -5,8 +5,7 @@
 깃허브에는 포함되어 있지 않으며, 사용자는 플래그 내용을 확인할 수 없습니다.
 
 ```bash
-docker build -t sqli-login-challenge .
-docker run -p 3000:3000 sqli-login-challenge
+docker run -p 3000:3000 snowhodut/sqli-login-challenge
 ```
 
 http://localhost:3000/login 으로 접속 후,
