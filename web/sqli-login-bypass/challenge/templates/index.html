@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/static/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCP</title>
+  </head>
+  <body id="login-screen">
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to</h1>
+      <h1 class="welcome-header__title">Space-Communication-Protocol</h1>
+      <p class="welcome-header__text">
+        If you have a WEYLAND-YUTANI Account, log in with your ID or phone
+        number.
+      </p>
+    </header>
+
+    <form action="/login" method="POST" class="login-form">
+      <input
+        class="login-form__input"
+        type="text"
+        name="username"
+        placeholder="ID or phone number"
+        required
+      />
+      <input
+        class="login-form__input"
+        type="password"
+        name="password"
+        placeholder="Password"
+        required
+      />
+      <input class="login-form__btn" type="submit" value="Log in" />
+      <a class="login-form__a" href="reset.html">Find Account or Password</a>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/bc2ced183c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
